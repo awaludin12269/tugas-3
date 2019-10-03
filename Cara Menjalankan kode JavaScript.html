@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- pembuka file html -->
+<html>
+    <!-- pembuka tag head yang berfungsi segitbagai kepala dari dokumen html -->
+    <head>
+        <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+        <title>Belajar JavaScript di Jti.polije</title> 
+        
+        <!-- membuat pembuka javascript untuk menjalankan javascript -->
+        <script type="text/javascript">
+        //  pada dibawah ini kita membuat sebuah fungsi yang bernama tambah_semangat
+        function tambah_semangat()
+        {
+            // pada bagian kode dibawah ini kita mendeklarasikan variabel a dengan value yang berasal dari div_semangat
+            // div_semangat merupakan selector yang kita digunakan 
+            var a=document.getElementById("div_semangat");
+            // fungsi a.innerhml berfungsi untuk menambah kalimat atau string ke selector yang kita pilih
+            a.innerHTML+="<p>Sedang Belajar JavaScript, Semangat...!!!</p>"; 
+            }
+        </script>
+        <!-- penutup tag script -->
+    </head>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+    <body>
+        <!-- tag h1 berfungsi untuk membuat heading 1 pada file html -->
+        <h1>Belajar JavaScript</h1>
+        <!-- pada tag p kita membuat multi selector dengan menggunakan class selector dan id selector -->
+        <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+            Klik tombol ini untuk menambahkan kalimat baru:
+        <!-- Tag button berfungsi untuk membuat tombol baik itu di dalam form, maupun diluar form. -->
+        <button id="tambah"
+            onclick="tambah_semangat()">Semangaat..!!
+        </button> 
+        <!-- penutup tag button -->
+            <div id="div_semangat"></div>
+    </body>
+    <!-- penutup tag body -->
+</html>
